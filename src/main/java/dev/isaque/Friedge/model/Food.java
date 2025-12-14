@@ -7,11 +7,9 @@ import java.time.LocalDate;
 
 @Entity
 @Table (name = "food_table")
-// O Model representa a minha tabela no banco de dados
 public class Food {
 
     @Id
-    // Passo a estrategia que será usada para gerar o Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
